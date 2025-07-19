@@ -29,6 +29,7 @@ section{
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    position: relative;
 }
 .cap{
     position: relative;
@@ -46,11 +47,12 @@ section{
     border-right-color:black;
     border-right-style: solid;
     border-right-width:10px;
-    top:2%;
+    top:-50px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    z-index: 1;
 }
 .line{
     position: absolute;
@@ -74,7 +76,7 @@ section{
 }
 .face{
     position: relative;
-    top:2%;
+    top:-50px;
     height:200px;
     width:400px;
     background-color: white;
@@ -93,13 +95,6 @@ section{
     display: flex;
     align-items: flex-start;
     justify-content: space-evenly;
-}
-.mouth{
-    height:300px;
-    width:250px;
-    background-color: beige;
-    position: relative;
-    top:-10%;
 }
 .eyesl,.eyesr{
     height:100px;
@@ -121,4 +116,60 @@ section{
     position: absolute;
     bottom: -40px;
     right:-60px;
+}
+.bonesl,.bonesr{
+    position: absolute;
+    height:105vh;
+    width:100px;
+    background-color: white;
+}
+.bonesl{
+    transform: rotate(-45deg);
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.bonesr{
+    transform: rotate(45deg);
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.b,.b1{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: white;
+}
+.b{
+    position: relative;
+    top:-6%;
+    left: -25%;
+}
+.b::after{
+    position: absolute;
+    content: "";
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    top:0%;
+    left:50%;
+    background-color: white;
+}
+.b1{
+    position: relative;
+    top:6%;
+    left: -25%;
+}
+.b1::after{
+    position: absolute;
+    content: "";
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    top:0%;
+    left:50%;
+    background-color: white;
 }
