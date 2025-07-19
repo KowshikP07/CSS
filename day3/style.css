@@ -122,7 +122,6 @@ section{
     height:105vh;
     width:100px;
     background-color: white;
-    border:10px solid black;
 }
 .bonesl{
     transform: rotate(-45deg);
@@ -143,7 +142,6 @@ section{
     width: 100px;
     border-radius: 50%;
     background-color: white;
-    border:10px solid black;
 }
 .b{
     position: relative;
@@ -159,7 +157,6 @@ section{
     top:0%;
     left:50%;
     background-color: white;
-    border:10px solid black;
 }
 .b1{
     position: relative;
@@ -175,5 +172,4 @@ section{
     top:0%;
     left:50%;
     background-color: white;
-    border:10px solid black;
 }
