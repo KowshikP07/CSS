@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+        <div class="cont" id="cir"><div class="cir1" id="cir1"></div></div>
+        <div class="cont"></div>
+        <div class="cont"></div>
+        <div class="cont"></div>
+    </div>
+    <script>
+        let cir=document.getElementById("cir");
+        let styles=getComputedStyle(cir);
+        let angle=0;
+        const con=setInterval(()=>{
+            angle+=45;
+            // let totalangle=angle%360;
+            cir.style.transform = `rotate(${angle}deg)`;
+        },2500)
+    </script>
+</body>
+</html>
